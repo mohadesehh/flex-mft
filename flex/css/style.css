@@ -1,0 +1,155 @@
+body{
+    background-image: url(../image/Dimond-wallpapers-HD.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 200px;
+    overflow-x: hidden;
+}
+.logo{
+    width: 200px;
+    display: block;
+}
+
+.header-container{
+    background-color: black;
+    height: 200px;
+    display: flex;
+    direction: rtl;
+}
+
+ul{
+    direction: ltr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    position: absolute;
+    top: 120px;
+    left: 250px;
+    
+}
+li{
+    
+    font-size: 22px;
+    color: whitesmoke;
+    padding: 30px; 
+}
+.search-container{
+    display: flex;
+   
+}
+
+input[type=search]{
+    margin-left: 20px;
+    margin-top: -80px;
+    height: 35px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+.icon{
+    font-size: 1.5vw;
+    margin-left: 980px;
+    margin-top: -75px;    
+}
+
+.icon>a{
+    color: whitesmoke;
+    margin: 10px;
+}
+
+.icon-box{
+    display: none;
+}
+/* --------------------------------------------------------------------------------------- */
+.container {
+    position: relative;
+    width: 700px;
+    margin-left: auto;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: 350px;
+    /* box-shadow: 2px 2px 5px #404040; */
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    margin-top: 50px;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: black;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: 1s ease-in-out , background-color 1s;
+  }
+  
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .text {
+    color: white;
+    text-shadow: 10px 10px 5px #7d7d7d;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+
+/* ------------------------------------------------------------------------------------- */
+@media screen and (max-width: 1331px){
+  .icon>a{
+    display: none;
+  }
+
+
+}
+
+@media screen and (max-width: 906px) {
+ 
+    li{
+        display: none; 
+    }
+    .search-container{
+        display: none;
+    }
+    .icon-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .search-icon{
+        color: whitesmoke;
+        font-size: 35px;
+        margin-left: 20px;
+        margin-top: -48px;
+    }
+    .menu-icon{
+        color: whitesmoke;
+        font-size: 35px;
+        margin-left: 25px;
+        padding-top: 20px;
+    }
+    .image{
+        margin-top: -10px;
+    }
+
+}
